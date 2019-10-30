@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Product Landing Page</title>
+	<style type="text/css">
+		body {
+			background: #EEEEEE;
+			font-family: sans-serif;
+		}
+		.header {
+			width: 100%;
+			height: 50px;
+			margin-top: -20px;
+			padding-top: 15px;
+			background-color: #EEEEEE;
+			position: fixed;
+		}
+		.header-img {
+			float: left;
+		}
+		ul {
+			width: 40%;
+			float: right;
+		}
+		li {
+			display: inline-block;
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		a {
+			text-decoration: none;
+			font-size: 15px;
+			color: #000000;
+		}
+		.form {
+			text-align: center;
+			padding-top: 80px;
+		}
+		.email {
+			width: 20%;
+			height: 25px;
+		}
+		.onSubmit {
+			width: 11%;
+			height: 32px;
+			background-color: #F1C40F;
+			margin-top: 17px;
+			margin-bottom: 20px;
+			border: none;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.onSubmit:hover {
+			background-color: #ef869e;
+			cursor: pointer;
+		}
+		.features {
+			width: 60%;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			margin: auto;
+			font-size: 17
+		}
+		.feature-head {
+			font-size: 18px;
+		}
+		.icon {
+			width: 15%;
+			float: left;
+		}
+		.pricing {
+			width: 80%;
+			margin:auto;
+		}
+		.howItWorks {
+			width: 50%;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		.column {
+			width: 30%;
+			height: 320px;
+			margin: 0 10px 0 10px;
+			border: #000000  1px solid;
+			display: inline-block;
+			text-align: center;
+		}
+		.column-head {
+			width: 100%;
+			height: 40px;
+			background-color: #DDDDDD;
+			font-size: 15px;
+			font-weight: bold;
+			padding-top: 10px;
+		}
+		.para {
+			width: 44%;
+			margin: auto;
+			line-height: 1.8em;
+		}
+		.colom-btn {
+			margin-top: 25px;
+			width: 37%;
+			height: 45px;
+			text-transform: uppercase;
+			background-color: #F1C40F;
+			border: none;
+			font-size: 16px;
+		}
+		.colom-btn:hover {
+			background-color: #ef869e;
+			cursor: pointer;
+		}
+		.footer {
+			width: 80%;
+			margin: auto;
+			height: 80px;
+			background-color: #DDDDDD;
+			margin-top: 30px;
+		}
+		.footer-element{
+			float: right;
+			width: 50%;
+		}
+		.footer-li {
+			margin-left: -10px;
+		}
+
+		.copyright {
+			margin-left: 50%;
+			margin-top: -3%;
+		}
+
+		/*Responsive Design*/
+
+		@media screen and (max-width: 800px) {
+			body {
+				text-align: center;
+			}
+			.header {
+				width: 100%;
+				height: 100px;
+				background-color:#EEEEEE 
+			}
+			.header-img {
+				margin-top: 14px;
+				margin-left: -22px;
+			}
+			ul {
+				width: 80%;
+				margin: auto;
+				float: left;
+			}
+			h2 {
+				margin-top: 30px;
+			}
+			.email {
+				width: 60%;
+			}
+			.onSubmit {
+				width: 50%;
+			}
+			.features {
+				width: 100%;
+			}
+			.icon {
+				width: 10px;
+			}
+			.feature-head {
+				font-weight: bold;
+			}
+			.column {
+				width: 80%;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.colom-btn {
+				margin-top: 2px;
+				height: 30px;
+			}
+			.footer-element {
+				width: 100%;
+				font-size: 12px;
+			}
+			ul {
+				margin-top: 10px;
+				margin-left: 60px;
+				margin-bottom: 6px;
+			}
+			a {
+				margin-left: -20px;
+				font-size: 12px;
+			}
+			.copyright {
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<header class="header">
+		<div class="set-position">
+			
+		</div>
+		<div class="header-img">
+			<img src="logo-img.png" width="350px;" height="40px;">
+		</div>
+
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="#feature-content">Feactures</a></li>
+				<li><a href="#working-content">How It Works</a></li>
+				<li><a href="#price-content">Pricing</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<form class="form">
+		<h2>Handcrafted, home-made masterpieces</h2>
+		<input type="email" name="name" class="email" placeholder="Enter your email address"><br>
+		<input type="Submit" value="Get Started" class="onSubmit">
+	</form>
+
+	<div class="features" id="feature-content">
+		<div class="icon">
+			<i class="fa fa-fire" aria-hidden="true"  style="font-size:48px;color:#FF8C00"></i>
+			
+		</div>
+		<span class="feature-head">Premium Materials</span><br>
+		<span>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</span>
+	</div>
+
+	<div class="features" id="feature-content">
+		<div class="icon">
+			<i class="fa fa-truck" style="font-size:48px;color:#FF8C00"></i>
+		</div>
+		<span class="feature-head">Fast Shipping</span><br>
+		<span>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</span>
+	</div>
+
+	<div class="features" id="feature-content">
+		<div class="icon">
+			<i class="fa fa-battery-full" style="font-size:48px;color:#FF8C00"></i>
+		</div>
+		<span class="feature-head">Quality Assurance</span><br>
+		<span>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</span>
+	</div>
+
+	<div class="howItWorks" id="working-content">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/61R5kn_kYwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="pricing" id="price-content">
+		<div class="column">
+			<div class="column-head">
+				TENOR TROMBONE
+			</div>
+			<h3>$600</h3>
+			<div class="para">
+				Lorem ipsumLorem ipsum.Lorem ipsum dolor.Lorem ipsum.
+			</div>
+            <input type="Submit" name="name" class="colom-btn" value="select">
+		</div>
+
+		<div class="column">
+			<div class="column-head">
+				VALVE TROMBONE
+			</div>
+			<h3>$900</h3>
+			<div class="para">
+				Lorem ipsumLorem ipsum.Lorem ipsum dolor.Lorem ipsum.
+			</div>
+            <input type="Submit" name="name" class="colom-btn" value="select">
+		</div>
+
+		<div class="column">
+			<div class="column-head">
+				BASS TROMBONE
+			</div>
+			<h3>$1200</h3>
+			<div class="para">
+				Lorem ipsumLorem ipsum.Lorem ipsum dolor.Lorem ipsum.
+			</div>
+            <input type="Submit" name="name" class="colom-btn" value="select">
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-element">
+			<ul>
+				<li class="footer-li"><a href="#">Privacy</a></li>
+				<li class="footer-li"><a href="#">Terms</a></li>
+				<li class="footer-li"><a href="#">Contact</a></li>
+			</ul>
+			<div class="copyright">
+				Copyright 2019, Original Trombones
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
